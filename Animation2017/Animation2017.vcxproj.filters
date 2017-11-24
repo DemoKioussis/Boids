@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\Engines">
+      <UniqueIdentifier>{6a979d30-5657-49f1-a1cf-e9a18f7d06dd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\MainSystem">
+      <UniqueIdentifier>{472b1243-1283-4d27-b24c-bf442eaabc60}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\MainSystem">
+      <UniqueIdentifier>{f6ea4661-49e4-44f2-bc54-71e8432e0b19}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Engines">
+      <UniqueIdentifier>{a5515e97-5253-41ec-be79-4c0e107ce4c6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\GRAPHICS">
+      <UniqueIdentifier>{61a67472-f7be-438e-91b0-eb921ffd0212}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\GRAPHICS\Renderables">
+      <UniqueIdentifier>{5911457b-24fa-4e86-9524-eb930cb102ce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\GRAPHICS\Boilerplate">
+      <UniqueIdentifier>{082a7439-0d4f-4dc3-a50a-9f9cd0a78491}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Graphics">
+      <UniqueIdentifier>{a91f7335-cd74-4c26-a74d-f3528a485d1a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Graphics\Shaders">
+      <UniqueIdentifier>{661bd74a-ab34-4b45-a864-883996674a12}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\MULTICORE">
+      <UniqueIdentifier>{baf8e4ca-16f8-4eb8-bf85-1bad283de238}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\MULTICORE">
+      <UniqueIdentifier>{f33a7f23-950b-4477-8caf-35aa306753da}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\MULTICORE\CL">
+      <UniqueIdentifier>{e8a2d975-6c34-4190-a40e-0276c061b3db}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="InputManager.cpp">
+      <Filter>Source Files\MainSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="TimeSystem.cpp">
+      <Filter>Source Files\MainSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderEngine.cpp">
+      <Filter>Source Files\Engines</Filter>
+    </ClCompile>
+    <ClCompile Include="glad.c">
+      <Filter>Source Files\MainSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="Mesh.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Boid.cpp">
+      <Filter>Source Files\MULTICORE</Filter>
+    </ClCompile>
+    <ClCompile Include="Flock.cpp">
+      <Filter>Source Files\MULTICORE</Filter>
+    </ClCompile>
+    <ClCompile Include="Main.cpp">
+      <Filter>Source Files\MULTICORE</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Mesh.h">
+      <Filter>Header Files\GRAPHICS\Renderables</Filter>
+    </ClInclude>
+    <ClInclude Include="GLSetup.h">
+      <Filter>Header Files\GRAPHICS\Boilerplate</Filter>
+    </ClInclude>
+    <ClInclude Include="Vertex.h">
+      <Filter>Header Files\GRAPHICS\Renderables</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderEngine.h">
+      <Filter>Header Files\Engines</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderable.h">
+      <Filter>Header Files\GRAPHICS\Renderables</Filter>
+    </ClInclude>
+    <ClInclude Include="WindowManager.h">
+      <Filter>Header Files\MainSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="TimeSystem.h">
+      <Filter>Header Files\MainSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="InputManager.h">
+      <Filter>Header Files\MainSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="Camera.h">
+      <Filter>Header Files\GRAPHICS</Filter>
+    </ClInclude>
+    <ClInclude Include="Component.h">
+      <Filter>Header Files\GRAPHICS</Filter>
+    </ClInclude>
+    <ClInclude Include="Shader.h">
+      <Filter>Header Files\GRAPHICS</Filter>
+    </ClInclude>
+    <ClInclude Include="Boid.h">
+      <Filter>Header Files\MULTICORE</Filter>
+    </ClInclude>
+    <ClInclude Include="Flock.h">
+      <Filter>Header Files\MULTICORE</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ShaderSources\frag.fs">
+      <Filter>Source Files\Graphics\Shaders</Filter>
+    </None>
+    <None Include="ShaderSources\vert.vs">
+      <Filter>Source Files\Graphics\Shaders</Filter>
+    </None>
+    <None Include="CLKernelSource\boidKernel.cl">
+      <Filter>Source Files\MULTICORE\CL</Filter>
+    </None>
+  </ItemGroup>
+</Project>
